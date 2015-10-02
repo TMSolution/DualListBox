@@ -37,7 +37,8 @@
                 warning:    'Are you sure you want to move this many items? Doing so can cause your browser to become unresponsive.',
                 availableText: 'Available',
                 selectedText: 'Selected',
-                filterText: 'Filter'
+                filterText: 'Filter',
+                showingText: '- showing'
                 
             };
 
@@ -59,6 +60,7 @@
                 availableText:$(this).data('availableText'),
                 selectedText:$(this).data('selectedText'),
                 filterText: $(this).data('filterText'),
+                showingText: $(this).data('showingText')
                 
             };
 
@@ -198,14 +200,14 @@
 
         $(options.parentElement).addClass('row').append(
                 (options.horizontal == false ? '   <div class="col-md-5">' : '   <div class="col-md-6">') +
-                '       <h4><span class="unselected-title"></span> <small>- showing <span class="unselected-count"></span></small></h4>' +
+                '       <h4><span class="unselected-title"></span> <small>'+options.showingText +'<span class="unselected-count"></span></small></h4>' +
                 '       <input class="filter form-control filter-unselected" type="text" placeholder="'+options.filterText+'" style="margin-bottom: 5px;">' +
                 (options.horizontal == false ? '' : createHorizontalButtons(1, options.moveAllBtn)) +
                 '       <select class="unselected ' + options.selectClass + '" style="height: 200px; width: 100%;" multiple></select>' +
                 '   </div>' +
                 (options.horizontal == false ? createVerticalButtons(options.moveAllBtn) : '') +
                 (options.horizontal == false ? '   <div class="col-md-5">' : '   <div class="col-md-6">') +
-                '       <h4><span class="selected-title"></span> <small>- showing <span class="selected-count"></span></small></h4>' +
+                '       <h4><span class="selected-title"></span> <small>'+options.showingText +'<span class="selected-count"></span></small></h4>' +
                 '       <input class="filter form-control filter-selected" type="text" placeholder="'+options.filterText+'" style="margin-bottom: 5px;">' +
                 (options.horizontal == false ? '' : createHorizontalButtons(2, options.moveAllBtn)) +
                 '       <select class="selected ' + options.selectClass + '" style="height: 200px; width: 100%;" multiple></select>' +
