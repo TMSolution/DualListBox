@@ -1,0 +1,35 @@
+{
+  "name": "duallistbox",
+  "description": "duallistbox for bootstrap",
+  "main": [
+    "js/motion.js",
+    "sass/motion.scss"
+  ],
+  "dependencies": {
+    "get-size": "~1.2.2",
+    "eventEmitter": "~4.2.11"
+  },
+  "devDependencies": {
+  },
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "duallistbox",
+  
+  ],
+  "authors": [
+    "Betty Beta "
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
