@@ -56,7 +56,7 @@
                 maxAllBtn:  $(this).data('maxAllBtn'),
                 selectClass:$(this).data('selectClass'),
                 availableText:$(this).data('Available'),
-                selectedText:$(this).data('Selected'), 
+                selectedText:$(this).data('Selected')
             };
 
             var options = $.extend({}, defaults, htmlOptions, paramOptions);
