@@ -209,8 +209,8 @@
                 '   </div>');
 
         $(options.parentElement + ' .selected').prop('name', $(options.element).prop('name'));
-        $(options.parentElement + ' .unselected-title').text(options.available +' '+ options.title);
-        $(options.parentElement + ' .selected-title').text(options.selected +' '+ options.title);
+        $(options.parentElement + ' .unselected-title').text(options.availableText +' '+ options.title);
+        $(options.parentElement + ' .selected-title').text(options.selectedText +' '+ options.title);
     }
 
     /** Creates the buttons when the dual list box is set in horizontal mode. */
