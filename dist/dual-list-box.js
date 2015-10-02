@@ -35,6 +35,9 @@
                 maxAllBtn:  500,                // Maximum size of list in which the all button works without warning. See below.
                 selectClass:'form-control',
                 warning:    'Are you sure you want to move this many items? Doing so can cause your browser to become unresponsive.'
+                availableText: 'Available',
+                selectedText: 'Selected'
+                
             };
 
             var htmlOptions = {
@@ -49,7 +52,11 @@
                 textLength: $(this).data('textLength'),
                 moveAllBtn: $(this).data('moveAllBtn'),
                 maxAllBtn:  $(this).data('maxAllBtn'),
-                selectClass:$(this).data('selectClass')
+                selectClass:$(this).data('selectClass'),
+                maxAllBtn:  $(this).data('maxAllBtn'),
+                selectClass:$(this).data('selectClass'),
+                availableText:$(this).data('Available'),
+                selectedText:$(this).data('Selected'), 
             };
 
             var options = $.extend({}, defaults, htmlOptions, paramOptions);
@@ -202,8 +209,8 @@
                 '   </div>');
 
         $(options.parentElement + ' .selected').prop('name', $(options.element).prop('name'));
-        $(options.parentElement + ' .unselected-title').text('Available ' + options.title);
-        $(options.parentElement + ' .selected-title').text('Selected ' + options.title);
+        $(options.parentElement + ' .unselected-title').text(options.available +' '+ options.title);
+        $(options.parentElement + ' .selected-title').text(options.selected +' '+ options.title);
     }
 
     /** Creates the buttons when the dual list box is set in horizontal mode. */
