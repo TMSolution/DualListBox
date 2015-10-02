@@ -200,14 +200,14 @@
 
         $(options.parentElement).addClass('row').append(
                 (options.horizontal == false ? '   <div class="col-md-5">' : '   <div class="col-md-6">') +
-                '       <h4><span class="unselected-title"></span> <small>'+options.showingText +'<span class="unselected-count"></span></small></h4>' +
+                '       <h4><span class="unselected-title"></span> <small>'+options.showingText +' <span class="unselected-count"></span></small></h4>' +
                 '       <input class="filter form-control filter-unselected" type="text" placeholder="'+options.filterText+'" style="margin-bottom: 5px;">' +
                 (options.horizontal == false ? '' : createHorizontalButtons(1, options.moveAllBtn)) +
                 '       <select class="unselected ' + options.selectClass + '" style="height: 200px; width: 100%;" multiple></select>' +
                 '   </div>' +
                 (options.horizontal == false ? createVerticalButtons(options.moveAllBtn) : '') +
                 (options.horizontal == false ? '   <div class="col-md-5">' : '   <div class="col-md-6">') +
-                '       <h4><span class="selected-title"></span> <small>'+options.showingText +'<span class="selected-count"></span></small></h4>' +
+                '       <h4><span class="selected-title"></span> <small>'+options.showingText +' <span class="selected-count"></span></small></h4>' +
                 '       <input class="filter form-control filter-selected" type="text" placeholder="'+options.filterText+'" style="margin-bottom: 5px;">' +
                 (options.horizontal == false ? '' : createHorizontalButtons(2, options.moveAllBtn)) +
                 '       <select class="selected ' + options.selectClass + '" style="height: 200px; width: 100%;" multiple></select>' +
