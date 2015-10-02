@@ -24,6 +24,9 @@ mixed and matched within the select or Javascript. The current options are:
 | `value`      | String  | id         | This determines what JSON field is handled as the value. |
 | `text`       | String  | name       | This determines what JSON field is handled as the text. | 
 | `title`      | String  | Example    | The title of the control. |
+| `availableText`      | String  | "Available"    | "Available" world translate |
+| `selectedText`      | String  | "Selected"    | Selected world translate |
+| `filterText`      | String  | "Filter"    | Filter world translate |
 | `horizontal` | Boolean | false      | Whether the control is lay out horizontal or vertical. |
 | `timeout`    | UInt    | 500        | Timeout when to start searching with the filter. |
 | `textLength` | UInt    | 45         | Maximum text length of when the element should contain title-attributes. |
