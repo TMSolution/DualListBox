@@ -34,7 +34,7 @@
                 moveAllBtn: true,               // Whether the append all button is available.
                 maxAllBtn:  500,                // Maximum size of list in which the all button works without warning. See below.
                 selectClass:'form-control',
-                warning:    'Are you sure you want to move this many items? Doing so can cause your browser to become unresponsive.'
+                warning:    'Are you sure you want to move this many items? Doing so can cause your browser to become unresponsive.',
                 availableText: 'Available',
                 selectedText: 'Selected'
                 
